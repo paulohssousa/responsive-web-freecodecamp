@@ -1,0 +1,236 @@
+:root{
+    --color-1: #0b161c;
+    --color-2: #FFA27A;
+    --color-3: #C45423;
+    --color-4: #FF6D2E;
+    --color-5: #2F5E78;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid white; */
+    background-color: var(--color-1);
+    color: linen;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  #header {
+    position: fixed;
+    top: 0;
+    width: 99%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  #header-img {
+    width: 80px;
+    justify-self: center;
+    object-fit: cover;
+  }
+  
+  #logowrapping {
+    display: flex;
+    align-items: center;
+  }
+  
+  #pagewrapping {
+    position: relative;
+    top: 60px;
+  }
+  
+  #companyname {
+    font-family: Oswald, sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+  #nav-bar{
+    font-family: Roboto, sans-serif;
+    font-size: 1.7rem;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    padding-right: 30px;
+  }
+  
+  #features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    font-size: 1.9rem;
+    margin-top: 50px;
+  }
+  
+  
+  #email {
+    display: block;
+    margin: 30px auto;
+    min-height: 40px;
+    min-width: 300px;
+    padding-left: 20px;
+    border: 1px solid linen;
+  }
+  
+  #submit {
+    display: block;
+    margin: 15px auto;
+    border: none;
+    background-color: var(--color-2);
+    color: var(--color-1);
+    min-height: 50px;
+    min-width: 200px;
+    font-family: Oswald, sans-serif;
+    font-size: 1.8rem;
+    border-radius: 5px;
+  }
+  
+  #submit:hover {
+    cursor: pointer;
+    background-color: var(--color-3);
+  }
+  
+  #how-it-works {
+    min-width: 400px;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    gap: 40px 20px;
+    margin: 60px 0;
+    font-family: Roboto, sans-serif
+  }
+  
+  i {
+    font-size: 7rem;
+    display: inline;
+    justify-self: end;
+    align-self: center;
+    color: var(--color-4);
+  }
+  
+  .description {
+    max-width: 800px;
+  }
+  
+  .description > h2{
+    font-size: 2.6rem;
+  }
+  
+  .description > p {
+    line-height: 1.5;
+    font-size: 1.6rem;
+  }
+  
+  #video {
+    width: 640;
+    height: 360;
+    display: block;
+    margin: 60px auto;
+  }
+  
+  #pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  
+  .product {
+    display: block;
+    width: 250px;
+    height: 340px;
+    text-align: center;
+    margin: 40px 70px;
+    font-size: 1.9rem;
+    border: 1px solid var(--color-2);
+    border-radius: 4px;
+  }
+  
+  .product > div {
+    background-color: var(--color-5);
+    padding: 15px 3px;
+    font-size: 2.2rem;
+  }
+  
+  .price {
+    font-size: 3rem;
+    padding: 8px 0;
+  }
+  
+  .btn {
+    background-color: var(--color-2);
+    border: none;
+    font-size: 2rem;
+    border-radius: 4px;
+    padding: 10px 30px;
+    color: var(--color-1);
+    margin-top: 3px;
+  }
+  
+  .btn:hover {
+    background-color: var(--color-4);
+    cursor: pointer;
+  }
+  
+  li {
+    list-style: none;
+    padding: 8px;
+  }
+  
+  footer {
+    background-color: var(--color-5);
+    height: 100px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-radius: 5px;
+  }
+  
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    font-size: 1.7rem;
+    padding-right: 10px;
+    background-color: var(--color-5);
+  }
+  
+  ul > li {
+    background-color: var(--color-5);
+  }
+  
+  footer span {
+    font-size: 1.5rem;
+    text-align: end;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: var(--color-5);
+  }
+  
+  @media (max-width: 600px) {
+    #pricing {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+  
+    #nav-bar {
+      display: none;
+    }
+  
+    #video {
+      width: 90%;
+    }
+  }
